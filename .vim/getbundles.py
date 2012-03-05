@@ -3,7 +3,10 @@ from os.path import exists
 from subprocess import call
 from shutil import rmtree
 
-bundles = [ "git://github.com/ervandew/supertab.git" ]
+bundles = [
+    "git://github.com/ervandew/supertab.git",
+    "git://github.com/vim-scripts/hexman.vim.git"
+]
 
 BUNDLE_PATH='bundle'
 if exists(BUNDLE_PATH):
