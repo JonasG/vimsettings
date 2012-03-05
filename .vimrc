@@ -1,2 +1,85 @@
+set nocompatible
+
+" Turn on pathogen
 call pathogen#infect()
 call pathogen#helptags()
+
+" Hides buffers instead of closing them. Better undo history and makes it
+" possible to switch buffers without saving.
+set hidden
+
+set nobackup
+set nostartofline
+
+" Settings for searching
+set incsearch
+set hlsearch
+set smartcase
+set wildmenu
+set wildmode=list:longest,full
+set ignorecase
+set smartcase
+
+if !exists("syntax on")
+	syntax on
+endif
+
+syntax on
+set number
+
+" Make backspace behave correctly
+set backspace=2
+
+set showmatch
+set splitbelow
+set linebreak
+
+" GUI options
+if has("gui_running")
+	colo vylight
+	set guioptions-=m
+	set guioptions-=T
+	set guifont=Consolas:h11
+	set nostartofline
+	set noerrorbells
+	set visualbell
+	set cursorline
+
+	" This starts Vim maximized. Only on Windows.
+	au GUIEnter * simalt ~x
+endif
+
+" Programming stuff
+set smartindent
+set autoindent
+set cindent
+
+" Minibufexplorer settings
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+
+let g:EnhCommentifyRespectIndent = 'Yes'
+let g:EnhCommentifyPretty = 'Yes'
+
+nnoremap j gj
+nnoremap k gk
+map <F7> :make<Enter>
+
+" Let's me select the word under the cursor using space, in VISUAL mode.
+noremap <space> viw
+
+" Set my leader keys
+let mapleader="-"
+let maplocalleader="-"
+
+" Open up .vimrc quickly, allowing me to add new settings
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+" Source .vimrc quickly
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Use jk instead of esc
+inoremap jk <esc>
+inoremap <esc> <nop>
+vnoremap jk <esc>
+vnoremap <esc> <nop>
