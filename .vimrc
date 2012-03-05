@@ -39,14 +39,17 @@ if has("gui_running")
 	colo vylight
 	set guioptions-=m
 	set guioptions-=T
-	set guifont=Consolas:h11
 	set nostartofline
 	set noerrorbells
 	set visualbell
 	set cursorline
 
-	" This starts Vim maximized. Only on Windows.
-	au GUIEnter * simalt ~x
+	if has("win32") || has("win64")
+		set guifont=Consolas:h11
+
+		" This starts Vim maximized. Only on Windows.
+		au GUIEnter * simalt ~x
+	endif
 endif
 
 " Programming stuff
