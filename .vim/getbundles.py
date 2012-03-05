@@ -6,7 +6,8 @@ from shutil import rmtree
 bundles = [
     "git://github.com/ervandew/supertab.git",
     "git://github.com/vim-scripts/hexman.vim.git",
-    "git://github.com/fholgado/minibufexpl.vim.git"
+    "git://github.com/fholgado/minibufexpl.vim.git",
+    "git://github.com/hrp/EnhancedCommentify.git"
 ]
 
 BUNDLE_PATH='bundle'
