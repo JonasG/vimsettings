@@ -103,3 +103,6 @@ def PyExecReplace(line1,line2):
 EOL
 command -range Pyer python PyExecReplace(<f-line1>,<f-line2>)
 
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
