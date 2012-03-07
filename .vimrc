@@ -44,7 +44,7 @@ if has("gui_running")
 	set visualbell
 	set cursorline
 
-	if has("win32") || has("win64")
+	if has("win32")
 		set guifont=Consolas:h11
 
 		" This starts Vim maximized. Only on Windows.
@@ -106,3 +106,5 @@ command -range Pyer python PyExecReplace(<f-line1>,<f-line2>)
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
+
+command! -range PrettyPrintJson :<line1>,<line2>!python -m json.tool
