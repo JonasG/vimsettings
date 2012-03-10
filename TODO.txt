@@ -14,3 +14,4 @@ TODO -- Thing I want to learn and do in Vim
  - If I need to work with git, try https://github.com/tpope/vim-fugitive
  - Try the gundo plugin: https://github.com/sjl/gundo.vim
  - Try using this plugin with rope for Python refactorings: https://github.com/sontek/rope-vim
+ - Learn to use Vim's persistent undo: :help undofile
