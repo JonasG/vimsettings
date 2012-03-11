@@ -15,3 +15,19 @@ TODO -- Thing I want to learn and do in Vim
  - Try the gundo plugin: https://github.com/sjl/gundo.vim
  - Try using this plugin with rope for Python refactorings: https://github.com/sontek/rope-vim
  - Learn to use Vim's persistent undo: :help undofile
+ - set showmode
+ - set showcmd
+ - set cursorline
+ - set ttyfast
+ - set ruler
+ - set backspace=indent,eol,start
+ - set laststatus=2
+ - nnoremap / /\v -- Should give more standard kind of regexpes.
+ - vnoremap / /\v
+ - set gdefault
+ - set showmatch
+ - set ignorecase and set smartcase
+ - nnoremap <tab> % and vnoremap <tab> % lets one use tab to match paranthesis etc.
+ - set colorcolumn=42
+ - Read up on why change (c) in Vim is so good.
+ - Use the plugin to create a scratch buffer: http://www.vim.org/scripts/script.php?script_id=664
