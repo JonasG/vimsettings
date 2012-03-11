@@ -29,5 +29,5 @@ TODO -- Thing I want to learn and do in Vim
  - set ignorecase and set smartcase
  - nnoremap <tab> % and vnoremap <tab> % lets one use tab to match paranthesis etc.
  - set colorcolumn=42
- - Read up on why change (c) in Vim is so good.
+ - Read up on why change (c) in Vim is so good. Example: ci"
  - Use the plugin to create a scratch buffer: http://www.vim.org/scripts/script.php?script_id=664
