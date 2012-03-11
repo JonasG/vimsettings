@@ -1,4 +1,5 @@
 TODO -- Thing I want to learn and do in Vim
+ - Try fuzzy finder: http://www.vim.org/scripts/script.php?script_id=1984
  - Try to Command-T plugin: http://git.wincent.com/command-t.git 
  - Learn about http://vimdoc.sourceforge.net/htmldoc/editing.html#gf
  - Learn about http://vimdoc.sourceforge.net/htmldoc/starting.html#views-sessions
@@ -10,7 +11,6 @@ TODO -- Thing I want to learn and do in Vim
  - Look for ideas in http://amix.dk/vim/vimrc.html
  - Try the surround plugin: http://www.vim.org/scripts/script.php?script_id=1697
  - Try integrating the pep8 checker: http://pypi.python.org/pypi/pep8 with https://github.com/vim-scripts/pep8
- - Try fuzzy finder: http://www.vim.org/scripts/script.php?script_id=1984
  - Try tcomment: https://github.com/jmartindf/vim-tcomment
  - If I need to work with git, try https://github.com/tpope/vim-fugitive
  - Try the gundo plugin: https://github.com/sjl/gundo.vim
