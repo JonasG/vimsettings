@@ -9,7 +9,9 @@ bundles = [
     "git://github.com/fholgado/minibufexpl.vim.git",
     "git://github.com/hrp/EnhancedCommentify.git",
     "git://github.com/msanders/snipmate.vim.git",
-    "git://github.com/fs111/pydoc.vim.git"
+    "git://github.com/fs111/pydoc.vim.git",
+    "git://github.com/vim-scripts/VimClojure.git",
+    "git://github.com/kien/rainbow_parentheses.vim.git"
 ]
 
 BUNDLE_PATH='bundle'
