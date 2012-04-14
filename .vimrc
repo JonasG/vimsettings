@@ -1,4 +1,6 @@
 set nocompatible
+filetype indent plugin on
+syntax on
 
 " Turn on pathogen
 call pathogen#infect()
@@ -20,11 +22,6 @@ set wildmode=list:longest,full
 set ignorecase
 set smartcase
 
-if !exists("syntax on")
-	syntax on
-endif
-
-syntax on
 set number
 
 " Make backspace behave correctly
@@ -71,17 +68,12 @@ map <F7> :make<Enter>
 " Let's me select the word under the cursor using space, in VISUAL mode.
 noremap <space> viw
 
-" Set my leader keys
-let mapleader="-"
-let maplocalleader="-"
-
 " Open up .vimrc quickly, allowing me to add new settings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " Source .vimrc quickly
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-filetype indent plugin on
 
 au FileType python set omnifunc=pythoncomplete#Complete
 
