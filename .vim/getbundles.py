@@ -40,8 +40,16 @@ def get_vimwiki():
 
     rmtree('vimwiki')
 
+def get_fuzzyfinder():
+    # Get dependency
+    call(['hg', 'clone', 'https://bitbucket.org/ns9tks/vim-l9',
+          os.path.join(BUNDLE_PATH, 'l9')])
+
+    call(['hg', 'clone', 'https://bitbucket.org/ns9tks/vim-fuzzyfinder',
+          os.path.join(BUNDLE_PATH, 'fuzzyfinder')])
 
 if __name__ == '__main__':
     cleanup()
     get_git_bundles()
-    get_vimwiki()
+    # get_vimwiki()
+    get_fuzzyfinder()
