@@ -1,5 +1,6 @@
 TODO -- Thing I want to learn and do in Vim
- - Try fuzzy finder: http://www.vim.org/scripts/script.php?script_id=1984
+ - If I need search by tag in fuzzyfinder, try using tags with Python: http://vim.wikia.com/wiki/Browsing_programs_with_tags
+ - Learn sessions :help session
  - Try to Command-T plugin: http://git.wincent.com/command-t.git 
  - Learn about http://vimdoc.sourceforge.net/htmldoc/editing.html#gf
  - Learn about http://vimdoc.sourceforge.net/htmldoc/starting.html#views-sessions
@@ -31,4 +32,3 @@ TODO -- Thing I want to learn and do in Vim
  - nnoremap <tab> % and vnoremap <tab> % lets one use tab to match paranthesis etc.
  - set colorcolumn=42
  - Read up on why change (c) in Vim is so good. Example: ci"
- - Use the plugin to create a scratch buffer: http://www.vim.org/scripts/script.php?script_id=664

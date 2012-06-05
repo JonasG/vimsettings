@@ -61,6 +61,13 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:EnhCommentifyRespectIndent = 'Yes'
 let g:EnhCommentifyPretty = 'Yes'
 
+" Map keys for fuzzyfinder
+nnoremap <c-b> :FufBuffer<cr>
+nnoremap <c-d> :FufDir<cr>
+nnoremap <c-f> :FufFile<cr>
+" Selection color for omni completion used by fuzzyfinder
+highlight Pmenu ctermbg=238 gui=bold
+
 nnoremap j gj
 nnoremap k gk
 map <F7> :make<Enter>
