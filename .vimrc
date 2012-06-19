@@ -84,7 +84,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 au FileType python set omnifunc=pythoncomplete#Complete
 
-let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = '<c-n>'
 let g:SuperTabLongestHighlight = 1
 set completeopt=menuone,longest,preview
 
