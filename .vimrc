@@ -63,7 +63,7 @@ let g:EnhCommentifyPretty = 'Yes'
 
 " Map keys for fuzzyfinder
 nnoremap <c-b> :FufBuffer<cr>
-nnoremap <c-d> :FufDir<cr>
+nnoremap <c-i> :FufDir<cr>
 nnoremap <c-f> :FufFile<cr>
 " Selection color for omni completion used by fuzzyfinder
 highlight Pmenu ctermbg=238 gui=bold
@@ -85,6 +85,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 au FileType python set omnifunc=pythoncomplete#Complete
 
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabLongestHighlight = 1
 set completeopt=menuone,longest,preview
 
 command! -range PrettyPrintJson :<line1>,<line2>!python -m json.tool
