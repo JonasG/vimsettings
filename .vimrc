@@ -89,3 +89,7 @@ let g:SuperTabLongestHighlight = 1
 set completeopt=menuone,longest,preview
 
 command! -range PrettyPrintJson :<line1>,<line2>!python -m json.tool
+
+". Settings for VimClojure
+let vimclojure#HighlightBuiltins = 1
+let vimclojure#ParenRainbow = 1
