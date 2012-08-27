@@ -65,8 +65,10 @@ let g:EnhCommentifyPretty = 'Yes'
 nnoremap <c-b> :FufBuffer<cr>
 nnoremap <c-i> :FufDir<cr>
 nnoremap <c-f> :FufFile<cr>
-" Selection color for omni completion used by fuzzyfinder
-highlight Pmenu ctermbg=238 gui=bold
+
+" Selection color for omni completion
+highlight Pmenu ctermfg=black ctermbg=grey
+highlight PmenuSel ctermfg=yellow ctermbg=blue
 
 nnoremap j gj
 nnoremap k gk
