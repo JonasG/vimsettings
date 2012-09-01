@@ -95,3 +95,9 @@ command! -range PrettyPrintJson :<line1>,<line2>!python -m json.tool
 ". Settings for VimClojure
 let vimclojure#HighlightBuiltins = 1
 let vimclojure#ParenRainbow = 1
+
+" Show a vertical column at textwidth + 1's column
+if v:version >= 703
+	set colorcolumn=+1
+	highlight ColorColumn ctermbg=darkgrey
+endif
