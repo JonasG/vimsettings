@@ -22,7 +22,8 @@ def get_git_bundles():
         # "git://github.com/vim-scripts/VimClojure.git",
         # "git://github.com/kien/rainbow_parentheses.vim.git"
         "git://repo.or.cz/vcscommand.git",
-        "git://github.com/nvie/vim-flake8.git"
+        "git://github.com/nvie/vim-flake8.git",
+        "git://github.com/kien/ctrlp.vim.git"
     ]
 
     olddir = getcwd()
@@ -38,9 +39,6 @@ def get_hg_bundles():
     # Get dependency
     call(['hg', 'clone', 'https://bitbucket.org/ns9tks/vim-l9',
           os.path.join(BUNDLE_PATH, 'l9')])
-
-    call(['hg', 'clone', 'https://bitbucket.org/ns9tks/vim-fuzzyfinder',
-          os.path.join(BUNDLE_PATH, 'fuzzyfinder')])
 
     vimclojure_temp_path = os.path.join(BUNDLE_PATH, 'vimclojure-temp')
     call(['hg', 'clone', 'https://bitbucket.org/kotarak/vimclojure',
