@@ -72,6 +72,12 @@ highlight PmenuSel ctermfg=yellow ctermbg=blue
 
 nnoremap j gj
 nnoremap k gk
+
+nnoremap <c-j> jzz
+nnoremap <c-k> kzz
+
+inoremap <c-BS> <c-w>
+
 map <F7> :make<Enter>
 
 " Let's me select the word under the cursor using space, in VISUAL mode.
