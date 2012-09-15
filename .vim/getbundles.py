@@ -14,7 +14,7 @@ def cleanup():
 
 def get_git_bundles():
     git_bundles = [
-        "git://github.com/ervandew/supertab.git",
+        # "git://github.com/ervandew/supertab.git",
         "git://github.com/vim-scripts/hexman.vim.git",
         "git://github.com/hrp/EnhancedCommentify.git",
         "git://github.com/msanders/snipmate.vim.git",

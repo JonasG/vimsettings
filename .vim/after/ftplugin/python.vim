@@ -5,3 +5,6 @@ setlocal shiftwidth=4
 setlocal textwidth=80
 setlocal smarttab
 setlocal expandtab
+
+" Use omnicomplete for Python
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
