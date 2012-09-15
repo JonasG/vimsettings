@@ -1,7 +1,5 @@
 TODO -- Thing I want to learn and do in Vim
- - If I need search by tag in fuzzyfinder, try using tags with Python: http://vim.wikia.com/wiki/Browsing_programs_with_tags
  - Learn sessions :help session
- - Try to Command-T plugin: http://git.wincent.com/command-t.git 
  - Learn about http://vimdoc.sourceforge.net/htmldoc/editing.html#gf
  - Learn about http://vimdoc.sourceforge.net/htmldoc/starting.html#views-sessions
  - Add 8.11. How do I map the tab key to cycle through and open all the buffers? You can use the following two map commands, to map the CTRL-Tab key to open the next buffer and the CTRL-SHIFT-Tab key to open the previous buffer: :nnoremap <C-Tab> :bnext<CR>     :nnoremap <S-C-Tab> :bprevious<CR>
@@ -11,7 +9,6 @@ TODO -- Thing I want to learn and do in Vim
  - http://vim.wikia.com/wiki/Speed_up_Python_coding
  - Look for ideas in http://amix.dk/vim/vimrc.html
  - Try the surround plugin: http://www.vim.org/scripts/script.php?script_id=1697
- - Try integrating the pep8 checker: http://pypi.python.org/pypi/pep8 with https://github.com/vim-scripts/pep8
  - Try tcomment: https://github.com/jmartindf/vim-tcomment
  - If I need to work with git, try https://github.com/tpope/vim-fugitive
  - Try the gundo plugin: https://github.com/sjl/gundo.vim
