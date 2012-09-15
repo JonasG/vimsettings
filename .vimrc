@@ -83,8 +83,6 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " Source .vimrc quickly
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-let g:SuperTabDefaultCompletionType = '<c-n>'
-let g:SuperTabLongestHighlight = 1
 set completeopt=menuone,longest,preview
 
 command! -range PrettyPrintJson :<line1>,<line2>!python -m json.tool
