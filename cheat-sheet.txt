@@ -1,0 +1,10 @@
+leader+x — kommentera/kommentera ut
+leader+pw — Kolla upp nuvarande ord i pydoc
+:Pydoc os.path — Kolla upp exakt i pydoc
+:PydocSearch path — sök i Python-dokumentationen efter path
+Ctrl+j — Scrolla nedåt med cursor centrerad
+Ctrl+k — Scrolla uppåt med cursor centrerad
+Ctrl+backspace — ta bort senaste ordet. Verkar inte fungera i Linux
+Ctrl+P — sök!
+Ctrl+x+n — sök på innehåll i samma fil
+Ctrl+x+o — använd omnicomplete
