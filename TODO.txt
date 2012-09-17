@@ -13,6 +13,7 @@ TODO -- Thing I want to learn and do in Vim and Unix
  - https://github.com/Raimondi/delimitmate
  - https://github.com/vim-scripts/YankRing.vim
  - chardet
+ - Write a filter that greps the output of svn log --xml. Should be possible to run through ack. Want to be able to get only the matching revisions, for processing by other tools.
  - Learn sessions :help session
  - Learn about http://vimdoc.sourceforge.net/htmldoc/editing.html#gf
  - Learn about http://vimdoc.sourceforge.net/htmldoc/starting.html#views-sessions
