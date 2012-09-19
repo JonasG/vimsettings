@@ -8,3 +8,6 @@ setlocal expandtab
 
 " Use omnicomplete for Python
 let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+
+set tags=./tags;
+autocmd BufWrite *.py :silent !ctags *.py
