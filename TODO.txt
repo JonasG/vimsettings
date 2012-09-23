@@ -1,5 +1,6 @@
 TODO -- Thing I want to learn and do in Vim and Unix
 
+ - Build my own vim with Python support (or use Windows Vim from cygwin) and get PytonComplete working.
  - Find a way to detect if cygwin is used, so be used for example to decide between using putclip and xsel
  - Is the Vim book from pragprog interesting to buy?
  - Relearn SnipMate. It seems to be broken right now.
