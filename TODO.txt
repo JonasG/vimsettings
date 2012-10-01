@@ -22,7 +22,6 @@ TODO -- Thing I want to learn and do in Vim and Unix
  - Add 8.11. How do I map the tab key to cycle through and open all the buffers? You can use the following two map commands, to map the CTRL-Tab key to open the next buffer and the CTRL-SHIFT-Tab key to open the previous buffer: :nnoremap <C-Tab> :bnext<CR>     :nnoremap <S-C-Tab> :bprevious<CR>
  - Learn how to use the :global command
  - Learn about registers:  http://vimdoc.sourceforge.net/htmldoc/change.html#registers
- - Add a Python syntax checker: http://vim.wikia.com/wiki/Python_-_check_syntax_and_run_script
  - http://vim.wikia.com/wiki/Speed_up_Python_coding
  - Look for ideas in http://amix.dk/vim/vimrc.html
  - Try the surround plugin: http://www.vim.org/scripts/script.php?script_id=1697
