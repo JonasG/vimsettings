@@ -1,18 +1,20 @@
 TODO -- Thing I want to learn and do in Vim and Unix
 
  - Learn the hexman plugin and add it to the cheatsheet
- - Build my own vim with Python support (or use Windows Vim from cygwin) and get PytonComplete working.
- - Find a way to detect if cygwin is used, so be used for example to decide between using putclip and xsel
- - Is the Vim book from pragprog interesting to buy?
- - Relearn SnipMate. It seems to be broken right now.
  - Add ranger
  - Add my ranger config, cygwin and non-cygwin
  - ranger config: start Visual Studio for sln and csproj files
+ - Relearn SnipMate. It seems to be broken right now.
+ - Is the Vim book from pragprog interesting to buy?
  - Add PyDoc and SnipMate to my cheat sheet
- - Ctags support in vim
  - CtrlP + tags
- - cscope
  - Create a program that answers if a file is handles by svn. How can I write a program with boolean output in Unix? Better to write a filter that returns a list of files that are under svn?
+ - set showmode
+
+ - Build my own vim with Python support (or use Windows Vim from cygwin) and get PytonComplete working.
+ - Find a way to detect if cygwin is used, so be used for example to decide between using putclip and xsel
+ - nnoremap / /\v -- Should give more standard kind of regexpes.
+ - cscope
  - https://github.com/Raimondi/delimitmate
  - https://github.com/vim-scripts/YankRing.vim
  - chardet
@@ -24,21 +26,18 @@ TODO -- Thing I want to learn and do in Vim and Unix
  - Learn how to use the :global command
  - Learn about registers:  http://vimdoc.sourceforge.net/htmldoc/change.html#registers
  - http://vim.wikia.com/wiki/Speed_up_Python_coding
- - Look for ideas in http://amix.dk/vim/vimrc.html
  - Try the surround plugin: http://www.vim.org/scripts/script.php?script_id=1697
  - Try tcomment: https://github.com/jmartindf/vim-tcomment
  - If I need to work with git, try https://github.com/tpope/vim-fugitive
  - Try the gundo plugin: https://github.com/sjl/gundo.vim
  - Try using this plugin with rope for Python refactorings: https://github.com/sontek/rope-vim
  - Learn to use Vim's persistent undo: :help undofile
- - set showmode
  - set showcmd
  - set cursorline
  - set ttyfast
  - set ruler
  - set backspace=indent,eol,start
  - set laststatus=2
- - nnoremap / /\v -- Should give more standard kind of regexpes.
  - vnoremap / /\v
  - set gdefault
  - set showmatch
