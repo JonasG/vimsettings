@@ -7,6 +7,7 @@ TODO -- Thing I want to learn and do in Vim and Unix
  - Relearn SnipMate. It seems to be broken right now.
  - Add ranger
  - Add my ranger config, cygwin and non-cygwin
+ - ranger config: start Visual Studio for sln and csproj files
  - Add PyDoc and SnipMate to my cheat sheet
  - Ctags support in vim
  - CtrlP + tags
