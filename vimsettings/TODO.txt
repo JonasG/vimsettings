@@ -1,6 +1,6 @@
 TODO -- Thing I want to learn and do in Vim and Unix
 
- - Learn the hexman plugin and add it to the cheatsheet
+ - Add a shortcut to easily open and search in my cheatsheets
  - Add ranger
  - Add my ranger config, cygwin and non-cygwin
  - ranger config: start Visual Studio for sln and csproj files
@@ -10,6 +10,7 @@ TODO -- Thing I want to learn and do in Vim and Unix
  - CtrlP + tags
  - Create a program that answers if a file is handles by svn. How can I write a program with boolean output in Unix? Better to write a filter that returns a list of files that are under svn?
  - set showmode
+ - Lär mig använda :normal för att köra kommandon
 
  - Build my own vim with Python support (or use Windows Vim from cygwin) and get PytonComplete working.
  - Find a way to detect if cygwin is used, so be used for example to decide between using putclip and xsel
