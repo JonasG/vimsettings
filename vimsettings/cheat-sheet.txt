@@ -8,3 +8,4 @@ Ctrl+backspace — ta bort senaste ordet. Verkar inte fungera i Linux
 Ctrl+P — sök!
 Ctrl+x+n — sök på innehåll i samma fil
 Ctrl+x+o — använd omnicomplete
+leader+hm - slå på av hexman. Sedan ? för att få hjälp

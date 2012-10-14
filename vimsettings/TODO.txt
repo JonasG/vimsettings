@@ -1,6 +1,6 @@
 TODO -- Thing I want to learn and do in Vim and Unix
 
- - Add a shortcut to easily open and search in my cheatsheets
+ - Convert my cheatsheet to vimdoc format and make sure it is :helptags()ed
  - Add ranger
  - Add my ranger config, cygwin and non-cygwin
  - ranger config: start Visual Studio for sln and csproj files
@@ -44,6 +44,5 @@ TODO -- Thing I want to learn and do in Vim and Unix
  - set showmatch
  - set ignorecase and set smartcase
  - nnoremap <tab> % and vnoremap <tab> % lets one use tab to match paranthesis etc.
- - set colorcolumn=42
  - Read up on why change (c) in Vim is so good. Example: ci"
- - Vim: Lär mig om silent (batch) ex mode, som startas med -s
+ - Vim: Learn about silent (batch) ex mode, which is started using -s
