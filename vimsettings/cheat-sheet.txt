@@ -1,3 +1,6 @@
+VIM
+===
+
 leader+x — kommentera/kommentera ut
 leader+pw — Kolla upp nuvarande ord i pydoc
 :Pydoc os.path — Kolla upp exakt i pydoc
@@ -9,3 +12,12 @@ Ctrl+P — sök!
 Ctrl+x+n — sök på innehåll i samma fil
 Ctrl+x+o — använd omnicomplete
 leader+hm - slå på av hexman. Sedan ? för att få hjälp
+
+BASH
+====
+
+Ctrl+R: Reverse search history. Can be repeated.
+Ctrl+A: Move to start of line. If using screen, do Ctrl+A+A
+Ctrl+E: Move to end of line.
+Ctrl+L: Clear screen
+Ctrl+W: Delete previous word
