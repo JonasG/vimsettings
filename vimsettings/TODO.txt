@@ -5,7 +5,6 @@ TODO -- Thing I want to learn and do in Vim and Unix
  - Add my ranger config, cygwin and non-cygwin
  - ranger config: start Visual Studio for sln and csproj files
  - Relearn SnipMate. It seems to be broken right now.
- - Is the Vim book from pragprog interesting to buy?
  - Add PyDoc and SnipMate to my cheat sheet
  - CtrlP + tags
  - Create a program that answers if a file is handles by svn. How can I write a program with boolean output in Unix? Better to write a filter that returns a list of files that are under svn?
