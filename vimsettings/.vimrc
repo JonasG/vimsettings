@@ -102,3 +102,7 @@ if v:version >= 703
 	set colorcolumn=+1
 	highlight ColorColumn ctermbg=darkgrey
 endif
+
+" grep settings, use ack!
+set grepprg=ack\ --nogroup\ --column\ $*
+set grepformat=%f:%l:%c:%m

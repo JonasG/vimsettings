@@ -3,6 +3,7 @@ from os import chdir, mkdir, getcwd
 from os.path import exists
 from subprocess import call
 from shutil import rmtree, copytree
+import shutil
 
 BUNDLE_PATH='bundle'
 
@@ -49,7 +50,14 @@ def get_hg_bundles():
     copytree(os.path.join(vimclojure_temp_path, 'vim'), vimclojure_path)
     rmtree(vimclojure_temp_path)
 
+def add_helpfiles():
+    mkdir(os.path.join(BUNDLE_PATH, 'helpfiles'))
+    doc_dir = os.path.join(BUNDLE_PATH, 'helpfiles', 'doc')
+    mkdir(doc_dir)
+    shutil.copy('../cheatsheet.txt', doc_dir)
+
 if __name__ == '__main__':
     cleanup()
     get_git_bundles()
     get_hg_bundles()
+    add_helpfiles()
