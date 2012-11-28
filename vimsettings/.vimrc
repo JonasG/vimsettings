@@ -39,7 +39,6 @@ if has("gui_running")
 	set nostartofline
 	set noerrorbells
 	set visualbell
-	set cursorline
 
 	if has("win32")
 		set guifont=Consolas:h11
@@ -49,26 +48,21 @@ if has("gui_running")
 	endif
 endif
 
+set cursorline
+
 " Programming stuff
 set smartindent
 set autoindent
 set cindent
 
-" Minibufexplorer settings
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-
 let g:EnhCommentifyRespectIndent = 'Yes'
 let g:EnhCommentifyPretty = 'Yes'
 
-" Map keys for fuzzyfinder
-nnoremap <c-b> :FufBuffer<cr>
-nnoremap <c-i> :FufDir<cr>
-nnoremap <c-f> :FufFile<cr>
 
 " Selection color for omni completion
 highlight Pmenu ctermfg=black ctermbg=grey
 highlight PmenuSel ctermfg=yellow ctermbg=blue
+highlight Cursorline ctermfg=black ctermbg=grey
 
 nnoremap j gj
 nnoremap k gk
@@ -77,6 +71,10 @@ nnoremap <c-j> jzz
 nnoremap <c-k> kzz
 
 inoremap <c-BS> <c-w>
+
+" Easy usage of quickfix
+nnoremap <f3> :cn<cr>
+nnoremap <s-f3> :cp<cr>
 
 map <F7> :make<Enter>
 
