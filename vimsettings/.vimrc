@@ -10,6 +10,8 @@ call pathogen#helptags()
 " possible to switch buffers without saving.
 set hidden
 
+set history=2000
+
 set nobackup
 set nostartofline
 
@@ -64,17 +66,27 @@ highlight Pmenu ctermfg=black ctermbg=grey
 highlight PmenuSel ctermfg=yellow ctermbg=blue
 highlight Cursorline ctermfg=black ctermbg=grey
 
+" Map leader to be comma, and backslash to be reverse character search.
+let mapleader=","
+noremap \ ,
+
 nnoremap j gj
 nnoremap k gk
 
-nnoremap <c-j> jzz
-nnoremap <c-k> kzz
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 
 inoremap <c-BS> <c-w>
 
 " Easy usage of quickfix
 nnoremap <f3> :cn<cr>
-nnoremap <s-f3> :cp<cr>
+nnoremap <f4> :cp<cr>
+
+" Move between buffers
+nnoremap <leader>n :bn<cr>
+nnoremap <leader>p :bp<cr>
 
 map <F7> :make<Enter>
 
@@ -90,10 +102,6 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 set completeopt=menuone,longest,preview
 
 command! -range PrettyPrintJson :<line1>,<line2>!python -m json.tool
-
-". Settings for VimClojure
-let vimclojure#HighlightBuiltins = 1
-let vimclojure#ParenRainbow = 1
 
 " Show a vertical column at textwidth + 1's column
 if v:version >= 703
