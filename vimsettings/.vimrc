@@ -50,8 +50,6 @@ if has("gui_running")
 	endif
 endif
 
-set cursorline
-
 " Programming stuff
 set smartindent
 set autoindent
