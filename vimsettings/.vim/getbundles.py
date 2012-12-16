@@ -15,13 +15,10 @@ def cleanup():
 
 def get_git_bundles():
     git_bundles = [
-        # "git://github.com/ervandew/supertab.git",
         "git://github.com/vim-scripts/hexman.vim.git",
         "git://github.com/hrp/EnhancedCommentify.git",
         "git://github.com/msanders/snipmate.vim.git",
         "git://github.com/fs111/pydoc.vim.git",
-        # "git://github.com/vim-scripts/VimClojure.git",
-        # "git://github.com/kien/rainbow_parentheses.vim.git"
         "git://repo.or.cz/vcscommand.git",
         "git://github.com/nvie/vim-flake8.git",
         "git://github.com/kien/ctrlp.vim.git",
@@ -39,18 +36,23 @@ def get_git_bundles():
 
 
 def get_hg_bundles():
-    # Get dependency
     call(['hg', 'clone', 'https://bitbucket.org/ns9tks/vim-l9',
           os.path.join(BUNDLE_PATH, 'l9')])
 
     vimclojure_temp_path = os.path.join(BUNDLE_PATH, 'vimclojure-temp')
     call(['hg', 'clone', 'https://bitbucket.org/kotarak/vimclojure',
-          vimclojure_temp_path])
+        vimclojure_temp_path])
 
     vimclojure_path = os.path.join(BUNDLE_PATH, 'vimclojure')
     # There is a vim subdirectory in vimclojur repo that we actually want.
     copytree(os.path.join(vimclojure_temp_path, 'vim'), vimclojure_path)
     rmtree(vimclojure_temp_path)
+
+    vimwiki_temp_path = os.path.join(BUNDLE_PATH, 'vimwiki-temp')
+    call(['hg', 'clone', 'https://code.google.com/p/vimwiki/', vimwiki_temp_path])
+    vimwiki_path = os.path.join(BUNDLE_PATH, 'vimwiki')
+    copytree(os.path.join(vimwiki_temp_path, 'src'), vimwiki_path)
+    rmtree(vimwiki_temp_path)
 
 def add_helpfiles():
     mkdir(os.path.join(BUNDLE_PATH, 'helpfiles'))
