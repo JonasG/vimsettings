@@ -25,7 +25,8 @@ def get_git_bundles():
         "https://github.com/tpope/vim-surround.git",
         "https://github.com/tpope/vim-repeat.git",
         "https://github.com/vim-scripts/fitnesse.vim.git",
-        "https://github.com/vim-scripts/JSON.vim.git"
+        "https://github.com/vim-scripts/JSON.vim.git",
+        "https://github.com/jnwhiteh/vim-golang.git"
     ]
 
     olddir = getcwd()
