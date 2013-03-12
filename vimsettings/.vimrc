@@ -35,7 +35,8 @@ set linebreak
 
 " GUI options
 if has("gui_running")
-	colo vylight
+	set background=dark
+	colo solarized
 	set guioptions-=m
 	set guioptions-=T
 	set nostartofline
