@@ -111,3 +111,13 @@ endif
 " grep settings, use ack!
 set grepprg=ack\ --nogroup\ --column\ $*
 set grepformat=%f:%l:%c:%m
+
+" Use Enumerate on a range to give each row a number that is increased by 1.   
+function! Enumerate() range
+	let l:count = 1
+	let l:output = l:count . '. '
+	execute(a:firstline . "," . a:lastline .  'g/./s/^/\=l:output/ | let l:count = l:count + 1 | let l:output = l:count . ". "')
+endfunction
+
+nnoremap <leader>e :call Enumerate()<cr>
+vnoremap <leader>e :call Enumerate()<cr>
