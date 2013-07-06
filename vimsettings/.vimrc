@@ -79,6 +79,8 @@ nnoremap <c-l> <c-w>l
 
 inoremap <c-BS> <c-w>
 
+nnoremap <c-l> :nohl<cr>
+
 " Easy usage of quickfix
 nnoremap <f3> :cn<cr>
 nnoremap <f4> :cp<cr>
