@@ -126,3 +126,19 @@ endfunction
 
 nnoremap <leader>e :call Enumerate()<cr>
 vnoremap <leader>e :call Enumerate()<cr>
+
+" Unite mappings
+let g:unite_source_history_yank_enable = 1
+nnoremap <leader>y :Unite -no-split history/yank<cr>
+nnoremap <leader>f :Unite -no-split -auto-preview -start-insert file<cr>
+nnoremap <leader>r :Unite -no-split -start-insert file_rec/async<cr>
+nnoremap <leader>g :Unite -no-split -start-insert grep:.<cr>
+nnoremap <leader>b :Unite -no-split -quick-match buffer<cr>
+nnoremap <leader>o :Unite -no-split -start-insert outline<cr>
+nnoremap <leader>m :Unite -no-split -start-insert file_mru<cr>
+
+if executable('ack')
+	let g:unite_source_grep_command = 'ack'
+	let g:unite_source_grep_default_opts = '--no-heading --no-color -a -H'
+	let g:unite_source_grep_recursive_opt = ''
+endif

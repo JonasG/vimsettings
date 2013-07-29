@@ -21,14 +21,16 @@ def get_git_bundles():
         "git://github.com/fs111/pydoc.vim.git",
         "git://repo.or.cz/vcscommand.git",
         "git://github.com/nvie/vim-flake8.git",
-        "git://github.com/kien/ctrlp.vim.git",
         "https://github.com/tpope/vim-surround.git",
         "https://github.com/tpope/vim-repeat.git",
         "https://github.com/vim-scripts/fitnesse.vim.git",
         "https://github.com/vim-scripts/JSON.vim.git",
         "https://github.com/sjl/gundo.vim.git",
         "https://github.com/jnwhiteh/vim-golang.git",
-        "https://github.com/altercation/vim-colors-solarized.git"
+        "https://github.com/altercation/vim-colors-solarized.git",
+        "https://github.com/Shougo/unite.vim.git",
+        "https://github.com/Shougo/vimproc.vim.git",
+        "https://github.com/h1mesuke/unite-outline.git"
     ]
 
     olddir = getcwd()
