@@ -30,7 +30,8 @@ def get_git_bundles():
         "https://github.com/altercation/vim-colors-solarized.git",
         "https://github.com/Shougo/unite.vim.git",
         "https://github.com/Shougo/vimproc.vim.git",
-        "https://github.com/h1mesuke/unite-outline.git"
+        "https://github.com/h1mesuke/unite-outline.git",
+        "https://github.com/bling/vim-airline.git"
     ]
 
     olddir = getcwd()

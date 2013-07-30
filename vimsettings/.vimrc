@@ -10,6 +10,9 @@ call pathogen#helptags()
 " possible to switch buffers without saving.
 set hidden
 
+" Always show statusline, to work with vim-airline.
+set laststatus=2
+
 set history=2000
 
 set nobackup
