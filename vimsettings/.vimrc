@@ -72,9 +72,6 @@ highlight Cursorline ctermfg=black ctermbg=grey
 let mapleader=","
 noremap \ ,
 
-" I try to not to use escape for escaping INSERT mode.
-noremap <esc> <nop>
-
 nnoremap j gj
 nnoremap k gk
 
