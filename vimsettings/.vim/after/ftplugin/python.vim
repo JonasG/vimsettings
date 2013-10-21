@@ -7,4 +7,7 @@ setlocal smarttab
 setlocal expandtab
 
 set tags=./tags;
-autocmd BufWrite *.py :silent !ctags *.py
+
+if executable('ctags')
+	autocmd BufWrite *.py :silent !ctags *.py
+endif

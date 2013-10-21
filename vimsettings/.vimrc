@@ -111,9 +111,11 @@ if v:version >= 703
 	highlight ColorColumn ctermbg=darkgrey
 endif
 
-" grep settings, use ack!
-set grepprg=ack\ --nogroup\ --column\ $*
-set grepformat=%f:%l:%c:%m
+if executable('ack')
+	" grep settings, use ack!
+	set grepprg=ack\ --nogroup\ --column\ $*
+	set grepformat=%f:%l:%c:%m
+endif
 
 " Use Enumerate on a range to give each row a number that is increased by 1.   
 function! Enumerate() range

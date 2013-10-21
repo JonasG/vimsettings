@@ -6,5 +6,5 @@ setlocal smarttab
 setlocal expandtab
 
 if executable('ctags')
-	autocmd BufWrite *.cpp,*.h :silent !ctags -R --sort=1 --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ *.h *.cpp
+	autocmd BufWrite *.c,*.h :silent !ctags -R --sort=1 --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C *.h *.c
 endif
