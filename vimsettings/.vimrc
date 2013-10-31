@@ -52,6 +52,11 @@ if has("gui_running")
 		" This starts Vim maximized. Only on Windows.
 		au GUIEnter * simalt ~x
 	endif
+else
+	" Desert looks ok in the console and it is possible to see search
+	" results on Windows, bettern than most color schemes.
+	set background=dark
+	colo desert
 endif
 
 " Programming stuff
@@ -142,3 +147,6 @@ if executable('ack')
 	let g:unite_source_grep_default_opts = '--no-heading --no-color -a -H'
 	let g:unite_source_grep_recursive_opt = ''
 endif
+
+" Filetype discovery stuff
+au BufNewFile,BufRead SConstruct,sconstruct,SConscript,sconscript set ft=python
