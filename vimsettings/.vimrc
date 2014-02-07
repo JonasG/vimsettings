@@ -1,10 +1,28 @@
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'vim-scripts/hexman.vim'
+Bundle 'hrp/EnhancedCommentify'
+Bundle 'msanders/snipmate.vim'
+Bundle 'fs111/pydoc.vim'
+Bundle 'nvie/vim-flake8'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'vim-scripts/JSON.vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimproc.vim'
+Bundle 'h1mesuke/unite-outline'
+Bundle 'bling/vim-airline'
+
 filetype indent plugin on
 syntax on
 
-" Turn on pathogen
-call pathogen#infect()
-call pathogen#helptags()
 
 " Hides buffers instead of closing them. Better undo history and makes it
 " possible to switch buffers without saving.
@@ -87,6 +105,8 @@ nnoremap <c-l> <c-w>l
 
 inoremap <c-BS> <c-w>
 
+nnoremap <c-m> :nohl<cr>
+
 " Easy usage of quickfix
 nnoremap <f3> :cn<cr>
 nnoremap <f4> :cp<cr>
@@ -150,3 +170,16 @@ endif
 
 " Filetype discovery stuff
 au BufNewFile,BufRead SConstruct,sconstruct,SConscript,sconscript set ft=python
+
+function! CopyBack()
+	let search_for = input("Search string: ")
+	execute "?" . search_for . "?t."
+endfunction
+
+function! CopyForward()
+	let search_for = input("Search string: ")
+	execute "/" . search_for . "/t."
+endfunction
+
+nnoremap <leader>cb :call CopyBack()<cr>
+nnoremap <leader>cf :call CopyForward()<cr>
