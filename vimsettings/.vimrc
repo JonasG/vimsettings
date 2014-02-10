@@ -19,6 +19,7 @@ Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimproc.vim'
 Bundle 'h1mesuke/unite-outline'
 Bundle 'bling/vim-airline'
+Bundle 'scrooloose/syntastic'
 
 filetype indent plugin on
 syntax on
