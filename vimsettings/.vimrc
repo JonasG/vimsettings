@@ -127,6 +127,13 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " Source .vimrc quickly
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" Misc mappings
+nnoremap gts :ts /
+nnoremap - /
+nnoremap _ ?
+
+set exrc
+
 set completeopt=menuone,longest,preview
 
 command! -range PrettyPrintJson :<line1>,<line2>!python -m json.tool
