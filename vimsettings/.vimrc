@@ -1,10 +1,15 @@
-set nocompatible
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/vimfiles/bundle/Vundle.vim
+let path='~/vimfiles/bundle'
+call vundle#begin(path)
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Bundle 'gmarik/Vundle.vim'
 
 Bundle 'vim-scripts/hexman.vim'
 Bundle 'hrp/EnhancedCommentify'
@@ -20,7 +25,10 @@ Bundle 'Shougo/vimproc.vim'
 Bundle 'h1mesuke/unite-outline'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
 
+call vundle#end()
 filetype indent plugin on
 syntax on
 
@@ -58,7 +66,7 @@ set linebreak
 " GUI options
 if has("gui_running")
 	set background=dark
-	colo solarized
+	colo slate
 	set guioptions-=m
 	set guioptions-=T
 	set nostartofline
@@ -144,11 +152,11 @@ if v:version >= 703
 	highlight ColorColumn ctermbg=darkgrey
 endif
 
-if executable('ack')
+" if executable('ack')
 	" grep settings, use ack!
-	set grepprg=ack\ --nogroup\ --column\ $*
-	set grepformat=%f:%l:%c:%m
-endif
+	" set grepprg=ack\ --nogroup\ --column\ $*
+	" set grepformat=%f:%l:%c:%m
+" endif
 
 " Use Enumerate on a range to give each row a number that is increased by 1.   
 function! Enumerate() range
@@ -191,3 +199,6 @@ endfunction
 
 nnoremap <leader>cb :call CopyBack()<cr>
 nnoremap <leader>cf :call CopyForward()<cr>
+
+let NERDTreeIgnore = ['\.pyc$']
+nnoremap <leader>t :NERDTreeToggle<cr>
