@@ -3,7 +3,6 @@
 " Make sure to install it before using this config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -16,36 +15,26 @@ filetype off                  " required
 " default search files, mru and buffers
 let g:ctrlp_cmd = 'CtrlPMixed'
 
-" I mostly work with Python 3, so let's use that by default in Python-mode
-let g:pymode_python = 'python3'
-
 
 call plug#begin('~/vimfiles/plugged')
 Plug 'tpope/vim-sensible'
 
-" Essential plugins, independent off mode or filetype used
+" Essential plugins, independent of mode or filetype used
 Plug 'ctrlpvim/ctrlp.vim'	" Quick search in files, buffers, mru
-Plug 'yegappan/mru'		" :MRU for showing mru
-Plug 'mileszs/ack.vim'		" :Ack for searching in filesystem
-Plug 'tommcdo/vim-lister'	" :Qfilter, filter quickfix (filenames only)
-				" :Qargs, move quickfix to args, for use with
-				" 	:argdo
 Plug 'tpope/vim-obsession'	" Session handling, :Obsession and then
 				" 	gvim.exe -S sessionfile.vim
+Plug 'tpope/vim-repeat'		" Makes the . command better
 
+
+" Python plugins
 Plug 'klen/python-mode', { 'for': 'python' }
+
+" Clojure plugins
+Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 call plug#end()
 
-
-" Bundle 'vim-scripts/hexman.vim'
-" Bundle 'fs111/pydoc.vim'
-" Bundle 'nvie/vim-flake8'
-" Bundle 'tpope/vim-surround'
-" Bundle 'tpope/vim-repeat'
-" Bundle 'vim-scripts/JSON.vim'
-" Bundle 'sjl/gundo.vim'
-" Bundle 'scrooloose/syntastic'
 
 " Hides buffers instead of closing them. Better undo history and makes it
 " possible to switch buffers without saving.
@@ -125,9 +114,17 @@ inoremap <c-BS> <c-w>
 " Clear the current search highlighting
 nnoremap <c-m> :nohl<cr>
 
+function! OpenTempfile()
+	let tmpfile = tempname()
+	execute 'edit' tmpfile
+endfunction
+
 " Open up .vimrc quickly, allowing me to add new settings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Open a temporary file for quick notes
+nnoremap <leader>es :call OpenTempfile()<cr>
 
 " Make searching faster (in Swedish keyboard) by imitation the same keys
 " that are used on American keyboard
