@@ -33,8 +33,12 @@ Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
+" Color schemes
+Plug 'iCyMind/NeoSolarized'
+
 call plug#end()
 
+let g:pymode_python = 'python3'
 
 " Hides buffers instead of closing them. Better undo history and makes it
 " possible to switch buffers without saving.
@@ -65,7 +69,7 @@ set linebreak
 " GUI options
 if has("gui_running")
 	set background=dark
-	colo slate
+	colo NeoSolarized
 	set guioptions-=m
 	set guioptions-=T
 	set nostartofline
@@ -82,7 +86,7 @@ else
 	" Desert looks ok in the console and it is possible to see search
 	" results on Windows, bettern than most color schemes.
 	set background=dark
-	colo desert
+	colo NeoSolarized
 endif
 
 " Programming stuff
